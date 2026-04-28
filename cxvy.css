@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-image: url("deardeer.png");
+    background-repeat: no-referrer;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,1);
+}
+
+.left_side {
+    background: #FFE5B4;
+    padding: 40px;
+}
+
+/* This is the secret to getting your old look back but making it readable */
+.right_side {
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    color: #fff;
+}
+
+.profiletext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.imgbx {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.imgbx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profiletext h2 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.info { padding-top: 30px; }
+
+.title {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.info ul li {
+    list-style: none;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.info .icon {
+    width: 30px;
+    color: rgb(130, 108, 13);
+    font-size: 18px;
+}
+
+.socialicon a {
+    font-size: 27px;
+    color: rgb(130, 108, 13);
+    margin-right: 10px;
+}
+
+/* Right Side Content Styling */
+.section_title {
+    text-transform: uppercase;
+    color: #FFE5B4; /* Matching the left side color */
+    margin-bottom: 10px;
+    margin-top: 25px;
+    border-bottom: 1px solid #FFE5B4;
+    padding-bottom: 5px;
+}
+
+.right_side p, .right_side li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.right_side ul {
+    margin-left: 20px;
+}
+
+.languages .percent {
+    height: 6px;
+    width: 100%;
+    background: rgba(0,0,0,0.2);
+    display: block;
+    margin-top: 5px;
+}
+
+.languages .percent div {
+    height: 100%;
+    background: rgb(130, 108, 13);
+}
+
+.info.languages {
+    padding-top: 30px;
+}
+
+.info.languages ul li {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 15px; 
+}
+
+.info.languages .text {
+    font-weight: 600;
+    margin-bottom: 5px; 
+}
+
+.info.languages .percent {
+    position: relative;
+    height: 8px; 
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    display: block;
+    border-radius: 4px; 
+    overflow: hidden;
+}
+
+.info.languages .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(130, 108, 13);
+    border-radius: 4px;
+}
+
+.profiletext h2 span {
+    font-size: 0.88em;
+    font-weight: 300;
+    text-transform: none;
+    display: block; 
+}
